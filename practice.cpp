@@ -7,7 +7,7 @@ class C1{
 	public:
 		int num;
 		void input(){
-			cout << "Enter number: " << endl;
+			cout << "Enter number(just to display) : " << endl;
 			cin >> num;
 		}
 };
@@ -18,7 +18,7 @@ class C2{
 		int number;
 		
 		void enter(){
-		cout << "Enter number: " << endl;
+		cout << "Enter number ( to add): " << endl;
 			cin >> number;;
 		}
 };
@@ -44,18 +44,17 @@ class C4 : public C1, public C2{
 
 
 int main(){
-	
-	C1 obj;
-	obj.input();
-	 
-	C2 obj1;
-	obj1.enter();
-	
-	C3 obj3;
-	obj3.output1();
-	
-	C4 obj4;
-	obj4.Sum();
-	
-	return 0;
+
+    C3 obj3;
+    obj3.input();
+    obj3.output1();
+
+    cout << endl;
+
+    C4 obj4;
+    obj4.input();
+    obj4.enter();
+    obj4.Sum();
+
+    return 0;
 }
