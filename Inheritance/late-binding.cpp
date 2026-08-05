@@ -3,35 +3,31 @@
 using namespace std;
 
 class Parent{
-
-public:
-
-    virtual void display(){
-        cout << "This is Parent class." << endl;
-    }
+	
+	public:
+		virtual void display(){
+			cout <<"This is Parent class.";
+		}
 };
 
 
 class Child : public Parent{
-
-public:
-
-    void display(){
-        cout << "This is Child class." << endl;
-    }
+	
+	public:
+		void display(){
+			cout << "This is a Child class";
+		}
 };
 
+
 int main(){
-
-
-    Parent *ptr;
-
- 
-    ptr = new Child;
-
-    ptr->display();
-
-    delete ptr;
-
-    return 0;
+	
+	Parent *ptr = new Child;
+	
+	ptr->display();
+	
+	delete ptr;
+	
+	
+	return 0;
 }
